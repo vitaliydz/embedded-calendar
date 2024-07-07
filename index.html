@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <style>
+      .v-field__input {
+        width: 100px;
+      }
+    </style>
+    <div id="root"></div>
+    <div
+      id="customFieldValue"
+      modelvalue="07-10 травня повний набір, , 1підїзд, 3 поверх, код: 24#8199"
+      error-messages=""
+      placeholder="Twój komentarz"
+      data-qa="checkout-contactinformation-customfield"
+    >
+      <div class="mb-2">
+        <label for="customFieldValue" class="text-grey800 font-weight-medium"
+          >Увага! В полі нижче вкажіть, будь ласка, ДАТИ доставки, номер
+          ПІД'ЇЗДУ, номер ПОВЕРХУ, КОД від під'їзду.
+        </label>
+      </div>
+      <div
+        class="v-input v-input--horizontal v-input--center-affix v-input--density-comfortable v-theme--light v-locale--is-ltr v-input--dirty v-text-field mb-2"
+      >
+        <!---->
+        <div class="v-input__control">
+          <div
+            class="v-field v-field--active v-field--center-affix v-field--dirty v-field--has-background v-field--no-label v-field--variant-filled v-theme--light bg-grey100 v-locale--is-ltr"
+          >
+            <div class="v-field__overlay"></div>
+            <div class="v-field__loader">
+              <div
+                class="v-progress-linear v-theme--light v-locale--is-ltr"
+                role="progressbar"
+                aria-hidden="true"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="top: 0px; height: 0px; --v-progress-linear-height: 2px"
+              >
+                <!---->
+                <div
+                  class="v-progress-linear__background"
+                  style="width: 100%"
+                ></div>
+                <div class="v-progress-linear__indeterminate">
+                  <div class="v-progress-linear__indeterminate long"></div>
+                  <div class="v-progress-linear__indeterminate short"></div>
+                </div>
+                <!---->
+              </div>
+            </div>
+            <!---->
+            <div class="v-field__field" data-no-activator="">
+              <!----><label class="v-label v-field-label" for="customFieldValue"
+                ><!----><!----></label
+              ><!----><input
+                placeholder="Twój komentarz"
+                size="1"
+                type="text"
+                id="customFieldValue"
+                aria-describedby="customFieldValue-messages"
+                class="v-field__input"
+              /><!---->
+            </div>
+            <!----><!---->
+            <div class="v-field__outline"><!----><!----></div>
+          </div>
+        </div>
+        <!---->
+        <div class="v-input__details">
+          <div
+            class="v-messages"
+            role="alert"
+            aria-live="polite"
+            id="customFieldValue-messages"
+          ></div>
+          <!---->
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
